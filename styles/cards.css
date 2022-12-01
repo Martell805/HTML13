@@ -1,0 +1,93 @@
+.card {
+    margin: auto;
+    position: relative;
+    width: 18%;
+    height: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(0deg, rgb(0, 0, 0), #BBBBBB);
+    overflow: hidden;
+    z-index: 0;
+    text-align: center;
+
+    transition: transform 0.5s;
+}
+
+.card-blur {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 20px);
+    border-radius: 0 15px 15px 0;
+
+    z-index: -7;
+}
+
+.card:hover {
+    z-index: 8;
+    transform: scale(1.1)
+}
+
+.card:hover ~ .card-blur {
+    animation: 0.7s blur-card-background forwards;
+}
+
+@keyframes blur-card-background {
+    from {
+        backdrop-filter: blur(0px);
+        z-index: -7;
+    }
+    20% {
+        z-index: 7;
+    }
+    to {
+        backdrop-filter: blur(5px);
+        z-index: 7;
+    }
+}
+
+.underlined-card::after{
+    content:"";
+    position: absolute;
+    right: 50%;
+    background: rgb(255, 255, 255);
+    width: 0;
+    height: 15px;
+    bottom: 0;
+}
+
+.underlined-card:hover::after {
+    right:0;
+    width:100%;
+    transition: all .5s ease-in-out;
+}
+
+.card-blackout {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 20px);
+    border-radius: 0 15px 15px 0;
+
+    z-index: -7;
+}
+
+.card:hover ~ .card-blackout {
+    animation: 0.7s blackout-card-background forwards;
+}
+
+@keyframes blackout-card-background {
+    from {
+        backdrop-filter: brightness(100%);
+        z-index: -7;
+    }
+    20% {
+        z-index: 7;
+    }
+    to {
+        backdrop-filter: brightness(30%);
+        z-index: 7;
+    }
+}

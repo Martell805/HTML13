@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <title>Регистрация</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("templates/header.html");
+        });
+    </script>
+</head>
+<body>
+<div id="header"></div>
+
+<style>
+    .fullscreen {
+        border-radius: 20px;
+        padding: 10px;
+        margin: auto;
+        width: 30%;
+        aspect-ratio: 1 / 1;
+
+        background-color: rgb(48, 48, 48);
+    }
+</style>
+
+<div class="fullscreen" id="fc">
+    <img src="images/logo.png" alt="Логотип" style="position: relative" id="image">
+
+</div>
+
+<script>
+    let fc = document.getElementById("fc");
+    let image = document.getElementById("image");
+
+    image.style.top = (fc.clientHeight / 2 - image.clientHeight) + "px";
+    image.style.left = (fc.clientWidth / 2 - image.clientWidth) + "px";
+
+    image.onclick = (event) => {
+        console.log(event.offsetX, event.offsetY);
+    }
+</script>
+
+</body>
+</html>

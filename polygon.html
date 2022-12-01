@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <title>Электронная библиотека</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("templates/header.html");
+        });
+    </script>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <h2>Кнопки</h2>
+
+            <div class="row">
+                <button class="button1">Кнопка 1</button>
+                <button class="button2">Кнопка 2</button>
+                <button class="button3">Кнопка 3</button>
+                <button class="button1 button2">Кнопка 4</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Картинки</h2>
+
+            <div class="row">
+                <div class="interactive-img">
+                    <img src="images/books.jpg" alt="Стопка книг">
+                    <div class="interactive-img-content">Первая стопка книг</div>
+                </div>
+
+                <div class="interactive-img">
+                    <img src="images/books.jpg" alt="Стопка книг">
+                    <div class="interactive-img-content">Вторая стопка книг</div>
+                </div>
+
+                <div class="interactive-img">
+                    <img src="images/books.jpg" alt="Стопка книг">
+                    <div class="interactive-img-content">Третья стопка книг</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="card">
+                    <h2>Карточка 1</h2>
+                    <p class="card-info">
+                        Информация, написанная на первой карточке<br>
+                        Информация, написанная на первой карточке<br>
+                        Информация, написанная на первой карточке
+                    </p>
+                    <div class="button">Подробнее</div>
+                </div>
+
+                <div class="card">
+                    <h2>Карточка 2</h2>
+                    <p class="card-info">
+                        Информация, написанная на второй карточке<br>
+                        Информация, написанная на второй карточке<br>
+                        Информация, написанная на второй карточке
+                    </p>
+                    <div class="button">Подробнее</div>
+                </div>
+
+                <div class="card">
+                    <h2>Карточка 3</h2>
+                    <p class="card-info">
+                        Информация, написанная на третьей карточке<br>
+                        Информация, написанная на третьей карточке<br>
+                        Информация, написанная на третьей карточке
+                    </p>
+                    <div class="button">Подробнее</div>
+                </div>
+
+                <div class="card-blur"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="card">
+                    <h2>Карточка 1</h2>
+                    <p class="card-info">
+                        Информация, написанная на первой карточке<br>
+                        Информация, написанная на первой карточке<br>
+                        Информация, написанная на первой карточке
+                    </p>
+                    <div class="button">Подробнее</div>
+                </div>
+
+                <div class="card">
+                    <h2>Карточка 2</h2>
+                    <p class="card-info">
+                        Информация, написанная на второй карточке<br>
+                        Информация, написанная на второй карточке<br>
+                        Информация, написанная на второй карточке
+                    </p>
+                    <div class="button">Подробнее</div>
+                </div>
+
+                <div class="card">
+                    <h2>Карточка 3</h2>
+                    <p class="card-info">
+                        Информация, написанная на третьей карточке<br>
+                        Информация, написанная на третьей карточке<br>
+                        Информация, написанная на третьей карточке
+                    </p>
+                    <div class="button">Подробнее</div>
+                </div>
+
+                <div class="card-blackout"></div>
+            </div>
+        </section>
+
+        <script src="scripts/trunker.js"></script>
+    </main>
+</body>
+</html>

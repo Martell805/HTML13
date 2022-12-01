@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <title>Панель администратора</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("templates/header.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <h2>Корзина</h2>
+
+            <div>
+                <label for="item">Предмет:</label>
+                <input type="text" id="item" placeholder="Желаемый предмет">
+            </div>
+            <button id="add">Добавить</button>
+            <button id="sort">Сортировать</button>
+            <button id="clear">Очистить</button>
+            <div>
+                <h3>Корзина:</h3>
+                <ul id="basket" class="basket"></ul>
+            </div>
+
+            <script src="scripts/basket.js"></script>
+        </section>
+
+
+        <section>
+            <h2>Уведомление при переходе</h2>
+
+            <div id="contents">
+                <div>
+                    <a href="#">Вложенная ссылка</a>
+                </div>
+
+                <a href="#">Просто ссылка</a> <br>
+
+                <a href="#">Ещё одна ссылка</a>
+            </div>
+
+            <script src="scripts/refs.js"></script>
+        </section>
+
+        <section>
+            <h2>Галерея</h2>
+
+            <div class="gallery">
+                <div class="main-img">
+                    <img src="images/books2.jpg" alt="Книги" width="600">
+                </div>
+
+                <div class="preview-row">
+                    <img class="selected-img" src="images/books2.jpg" alt="Книги" width="200">
+                    <img src="images/books3.jpg" alt="Книги" width="200">
+                    <img src="images/books4.jpg" alt="Книги" width="200">
+                </div>
+            </div>
+
+            <script src="scripts/gallery.js"></script>
+        </section>
+
+        <section>
+            <h2>Слайдер</h2>
+
+            <div class="slider">
+                <div class="handle"></div>
+            </div>
+
+            <script src="scripts/slider.js"></script>
+        </section>
+
+        <section>
+            <h2>Корзина 2.0</h2>
+
+            <div>
+                <h3>Товары:</h3>
+                <ul class="dnd-container">
+                    <li class="dnd-item">Предмет 1</li>
+                    <li class="dnd-item">Предмет 2</li>
+                    <li class="dnd-item">Предмет 3</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Корзина:</h3>
+                <ul class="dnd-container">
+                    <p>Предметов: <span class="amount"></span></p>
+                    <li class="dnd-item">Предмет 4</li>
+                </ul>
+            </div>
+
+            <script src="scripts/basket2_0.js"></script>
+        </section>
+
+        <section>
+            <h2>Анимация</h2>
+
+            <div class="animated-div" id="animated"></div>
+
+            <script src="scripts/animation.js"></script>
+        </section>
+
+    </main>
+</body>
+</html>

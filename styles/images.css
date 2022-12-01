@@ -1,0 +1,25 @@
+.interactive-img {
+    position: relative;
+    width: 200px;
+}
+
+.interactive-img > img {
+    width: 100%;
+}
+
+.interactive-img-content {
+    position: absolute;
+    top: 0;
+    background: rgb(0, 0, 0);
+    width: 200px;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    color: white;
+    z-index: 9;
+}
+
+.interactive-img:hover > .interactive-img-content {
+    transition: opacity .5s ease-in-out;
+    opacity: 0.5;
+}

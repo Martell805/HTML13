@@ -1,0 +1,14 @@
+.basket {
+    padding-left: 10px;
+}
+
+.basket-item {
+    display: flex;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 5px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,16 @@
+.dnd-container {
+    min-height: 30px;
+    background-color: rgb(40, 40, 40);
+    padding: 5px;
+}
+
+.dnd-item {
+    display: flex;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 5px;
+    margin-bottom: 5px;
+}

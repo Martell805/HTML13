@@ -1,0 +1,81 @@
+.note-menu {
+    position: absolute;
+    background: rgb(53, 53, 53);
+    border: 4px solid rgb(80, 80, 80);
+    width: 60px;
+    height: 60px;
+    top: 50px;
+    right: 80px;
+    border-radius: 50px;
+    vertical-align: center;
+    box-sizing: border-box;
+}
+
+.note-list {
+    display: flex;
+    overflow-x: visible;
+    overflow-y: scroll;
+    flex-direction: column;
+    max-height: 220px;
+}
+
+.bell-icon {
+    align-content: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: no-repeat center/70% url(../images/bell.png);
+}
+
+.note-counter {
+    text-align: center;
+    top: -5px;
+    right: -10px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(80, 80, 80);
+    border-radius: 10px;
+}
+
+.note-menu:hover {
+    border-radius: 15px;
+    width: 300px;
+    height: 290px;
+    transition: all .5s ease-in-out;
+}
+
+.note-list {
+    position: absolute;
+    top: 50px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+}
+
+.note-menu:hover > .note-list {
+    visibility: visible;
+    transition: opacity .1s ease-in-out 0.5s;
+    opacity: 1;
+}
+
+.note {
+    padding: 2px 10px 2px 10px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.note:hover {
+    transform: translateX(-10px);
+    background: rgb(80, 80, 80);
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (orientation: portrait) {
+    .note-menu {
+        top: 70px;
+        right: 30px;
+    }
+}

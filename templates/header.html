@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <title>Электронная библиотека</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+    <body>
+        <header>
+            <h1 id="main" class="font-effect-neon"><strong>Электронная библиотека</strong></h1>
+
+            <div class="hamburger-menu">
+
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <nav class="menu__box">
+                    <ul id="contents">
+                        <li><a class="menu__item" href="../register.html">Регистрация</a></li>
+                        <li><a class="menu__item" href="../index.html#popular">Популярные сейчас</a></li>
+                        <li><a class="menu__item" href="../index.html#read">Прочитанные вами</a></li>
+                        <li><a class="menu__item" href="../index.html#info">Общая информация</a></li>
+                        <li><a class="menu__item" href="../index.html#history">История</a></li>
+                        <li><a class="menu__item" href="../index.html#gallery">Галерея</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="note-menu">
+                <div class="note-counter">0</div>
+                <div class="bell-icon"></div>
+                <div class="note-list">
+
+                </div>
+            </div>
+
+            <script src="../scripts/notifications.js"></script>
+        </header>
+    </body>
+</html>

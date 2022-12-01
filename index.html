@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="/images/logo.png">
+        <title>Электронная библиотека</title>
+
+        <link rel="stylesheet" href="styles/style.css">
+
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous">
+        </script>
+        <script>
+            $(function(){
+                $("#header").load("templates/header.html");
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <main>
+            <div class="aside">
+                <aside>
+                    <h2 id="recommended"><i>Рекомендуемые вам:</i></h2>
+                    <dl>
+                        <dt><b><cite>Рекомендуемая книга 1</cite></b></dt>
+                        <dd>Интересная книга, вам понравится<i>(похожа на вашу любимую)</i></dd>
+
+                        <dt><b><cite>Рекомендуемая книга 2</cite></b></dt>
+                        <dd>Тоже интересная книга</dd>
+
+                        <del>
+                            <dt><b><cite>Рекомендуемая книга 4</cite></b></dt>
+                            <dd>Уже прочитана вами</dd>
+                        </del>
+
+                        <dt><b><cite>Рекомендуемая книга 5</cite></b></dt>
+                        <dd><u><em>Наверное</em> понравится</u></dd>
+                    </dl>
+                </aside>
+
+                <aside>
+                    <p><a href="https://www.google.com/" target="_blank">Здесь можно найти все книги!</a></p>
+                    <img src = "/images/google.jpg" usemap = "#google_image" alt = "Выбор ссылки без выбора" width="200">
+                    <map name = "google_image">
+                        <area shape="rect" coords="0,0,125,125" href="https://www.google.com/" alt="Ссылка на гугл">
+                        <area shape="circle" coords="150,72,25" href="https://www.google.com/" alt="Вторая ссылка на гугл">
+                        <area shape="poly" coords="175,0,175,125,250,72" href="https://www.google.com/" alt="Третья ссылка на гугл">
+                    </map>
+                </aside>
+
+                <aside>
+                    <h2>Хранилище книг</h2>
+
+                    <div class="stable-row">
+                        <div class="interactive-img">
+                            <img src="images/books.jpg" alt="Стопка книг">
+                            <div class="interactive-img-content">Первая стопка книг</div>
+                        </div>
+
+                        <div class="interactive-img">
+                            <img src="images/books.jpg" alt="Стопка книг">
+                            <div class="interactive-img-content">Вторая стопка книг</div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <section>
+                <h2 id="read"><i>Прочитанные вами:</i></h2>
+
+                <ul>
+                    <li><cite>Рекомендуемая книга 4</cite></li>
+                    <li><cite>Прочитанная вами книга</cite></li>
+                    <li><cite>Ваша <em>любимая</em> книга</cite></li>
+                    <li><cite><abbr>К.Н.И.Г.А.</abbr></cite></li>
+                    <li><cite>Просто книга</cite></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 id="popular"><i>Популярные сейчас:</i></h2>
+
+                <ol>
+                    <li><cite><em>Самая</em> популярная книга</cite></li>
+                    <li><cite>Не самая популярная книга</cite></li>
+                    <li><cite>Книга с <em><sub>модным</sub> <sup>названием</sup></em></cite></li>
+                    <li><cite>Книга известного автора</cite></li>
+                </ol>
+            </section>
+
+            <section class="left-side-section">
+                <article>
+                    <h2 id="info"><i>Почему стоит читать:</i></h2>
+                    <p>
+                        Регулярное чтение позволяет лучше формулировать собственные мысли. Благодаря книгам появляется возможность расширить круг общения,
+                        стать интересным собеседником и начать получать удовольствие от взаимодействия с миром. Не говоря уже о том,
+                        что прочитанное положительно влияет на наше сознание, шлифует речь и формирует собственный взгляд на вещи.
+                        Обеспечить полноценную работу мозга на долгие годы.
+                    </p>
+                    </article>
+            </section>
+
+            <section class="left-side-section">
+                <article>
+                    <h2 id="history"><i>История книг:</i></h2>
+                    <p>
+                        История книги — это история технических новшеств, связанных с изготовлением книг.
+                        Эти новшества улучшали хранение текста, доступность информации, мобильность книги, уменьшали стоимость её производства.
+                        После изобретения древними цивилизациями систем записи люди начали использовать для письма почти все,
+                        на чём можно писать — глиняные таблички, кору дерева, листы металла и т. п.
+                    </p>
+                </article>
+            </section>
+
+            <section>
+                <h2 id="gallery"><i>Галерея:</i></h2>
+                <div class="gallery">
+                    <img src="images/books.jpg" alt="books">
+                    <img src="images/google.jpg" alt="google">
+                    <img src="images/logo.png" alt="logo">
+                    <img src="images/books.jpg" alt="books">
+                    <img src="images/google.jpg" alt="google">
+                    <img src="images/logo.png" alt="logo">
+                    <img src="images/books.jpg" alt="books">
+                    <img src="images/google.jpg" alt="google">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-div">
+                    <h3>О нас:</h3>
+                    <p>
+                        *много плюсов библиотеки*
+                        *много плюсов библиотеки*
+                        *много плюсов библиотеки*
+                        *много плюсов библиотеки*
+                        *много плюсов библиотеки*
+                        *много плюсов библиотеки*
+                    </p>
+                </div>
+
+                <div class="footer-div">
+                    <h3>Контакты:</h3>
+                    <a href="tel:01234567890" class="button old-social">Позвонить в тех поддержку</a>
+                    <a href="mailto:fakemail@gmail.com" class="button old-social">Написать письмо в тех поддержку</a>
+                </div>
+
+                <div class="footer-div">
+                    <h3>Соцсети:</h3>
+                    <div class="stable-row">
+                        <a href="https://vk.com" class="button button1 new-social">
+                            <img src="images/VK.png" width="50px" height="50px">
+                        </a>
+                        <a href="https://telegram.org" class="button button1 new-social">
+                            <img src="images/TG.png" width="50px" height="50px">
+                        </a>
+                        <a href="https://www.youtube.com" class="button button1 new-social">
+                            <img src="images/YT.png" width="50px" height="50px">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-div">
+                    <h3>Четвёртая колонка:</h3>
+                    <p>
+                        Здесь просто, чтобы была и весь футер красиво складывался при уменьшении ширины экрана
+                    </p>
+                </div>
+            </footer>
+        </main>
+
+    </body>
+</html>
